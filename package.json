@@ -9,7 +9,6 @@
     "build": "webpack",
     "lint": "tslint --project tsconfig.json \"**/*.ts\"",
     "test": "jest --colors --coverage",
-    "coverage": "node_modules/.bin/jest-badges-readme",
     "sonarqube:up": "docker-compose -f docker-compose.yml up -d",
     "sonarqube:down": "docker-compose -f docker-compose.yml down",
     "sonarqube-scanner": "node sonar-project.js.",
@@ -34,9 +33,8 @@
   },
   "homepage": "https://github.com/first-line-outsourcing/sonarqube-example#readme",
   "devDependencies": {
-    "@olavoparno/jest-badges-readme": "^1.4.1",
     "@types/jest": "^26.0.0",
-    "@types/node": "^14.0.13",
+    "@types/node": "^13.13.6",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",

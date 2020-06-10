@@ -6,7 +6,5 @@ sonarqubeScanner(
     token: process.env.SONAR_TOKEN || '',
     options: {}
   },
-  () => {
-    console.log('SonarQube analysis is done!');
-  }
+  () => process.exit()
 );
